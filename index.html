@@ -1566,12 +1566,12 @@
 <section id="tab-epochs" class="tab-content hidden space-y-6 max-w-7xl mx-auto pb-12">
   <div class="p-6 rounded-2xl bg-gradient-to-br from-amber-950/40 to-slate-900 border border-amber-500/20 shadow-xl flex flex-col md:flex-row items-center gap-6">
     <div class="flex-grow">
-      <h2 class="text-2xl font-black text-white mb-3">⏳ Charakterystyka Epok Literackich</h2>
+      <h2 class="text-2xl font-black text-white mb-3">⏳ Charakterystyka Epok i Głównych Nurtów</h2>
       <p class="text-slate-300 text-sm leading-relaxed mb-4">
-        Zrozumienie założeń danej epoki pozwala na głębszą analizę każdego utworu. Bohaterowie nie działają w próżni – ich wybory są niemal zawsze uwarunkowane prądami filozoficznymi i historycznymi ich czasów (np. <em>Kordian</em> myśli jak romantyk, a <em>Wokulski</em> jest rozdarty między dwiema epokami).
+        Zrozumienie założeń danej epoki pozwala na głębszą analizę każdego utworu. Poniżej znajdziesz rozwinięte <strong>najważniejsze myśli, idee i prądy filozoficzne</strong> charakterystyczne dla konkretnych okresów. 
       </p>
       <div class="inline-flex gap-2 text-xs font-medium px-4 py-2 bg-emerald-950/30 border border-emerald-500/30 rounded-lg text-emerald-200">
-        💡 <strong>Wskazówka:</strong> Możesz użyć założeń epoki we wstępie (jako tło dla zdefiniowania problemu) lub potraktować je jako pełnoprawny kontekst w rozwinięciu (np. kontekst historyczno-literacki).
+        💡 <strong>Wskazówka:</strong> Kliknij „Rozwiń” na karcie epoki, aby błyskawicznie przypomnieć sobie, czym dokładnie były np. mesjanizm, winkelriedyzm, praca u podstaw czy dekadentyzm!
       </div>
     </div>
     <div class="text-[60px] opacity-80 shrink-0">🕰️</div>
@@ -1579,179 +1579,463 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
         <h3 class="text-[15px] font-bold text-amber-300">Antyk (Starożytność)</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">VIII w. p.n.e. – 476 r. n.e.</span>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">VIII w. p.n.e. – 476 r. n.e.</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Fundament kultury europejskiej. Opiera się na dwóch filarach: Biblii (światopogląd chrześcijański, teocentryzm) i mitologii grecko-rzymskiej (politeizm, humanizm). W sztuce dominuje klasyczne piękno, harmonia, proporcja (mimesis). To epoka narodzin demokracji, teatru i filozofii (stoicyzm, epikureizm).
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Fundament kultury europejskiej. Opiera się na dwóch filarach: Biblii (światopogląd chrześcijański, teocentryzm) i mitologii grecko-rzymskiej (politeizm, humanizm).
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>Mitologia</strong>, <strong>Biblia</strong>, <strong>„Antygona”</strong>, <strong>„Iliada” / „Odyseja”</strong>, utwory Horacego.
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>Mitologia, Biblia, „Antygona”, „Iliada”, pieśni Horacego.</strong>
         </p>
+      </div>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Stoicyzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Zakładał, że szczęście można osiągnąć jedynie poprzez cnotę, spokój umysłu (apatia) i dystans do emocji (zarówno radości, jak i smutku).</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Epikureizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Skupiał się na rozsądnym używaniu życia i minimalizowaniu cierpienia (słynne 'Carpe diem' - chwytaj dzień).</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Katharsis</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Oczyszczenie z negatywnych emocji (litości i trwogi) u widza teatru antycznego wskutek współprzeżywania tragedii bohatera.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Fatum</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Ślepy, bezwzględny los (przeznaczenie), przed którym nie ma ucieczki (np. losy Edypa i Antygony).</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
         <h3 class="text-[15px] font-bold text-amber-300">Średniowiecze</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">V wiek – XV wiek</span>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">V wiek – XV wiek</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Epoka teocentryczna (Bóg w centrum wszystkiego). Dominuje anonimowość twórców (sztuka tworzona na chwałę Boga – ad maiorem Dei gloriam). Wykształciły się wzorce osobowe: asceta (św. Aleksy), idealny rycerz (Roland), idealny władca (król Artur). Filozofie to głównie augustynizm (człowiek rozdarty) i tomizm (drabina bytów).
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Epoka teocentryczna. Dominuje anonimowość twórców i tworzenie 'na chwałę Boga'. Wykształciły się wzorce: asceta, idealny rycerz i władca.
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>„Bogurodzica”</strong>, <strong>„Lament świętokrzyski”</strong>, <strong>„Pieśń o Rolandzie”</strong>, <strong>„Rozmowa Mistrza Polikarpa ze Śmiercią”</strong>.
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>„Bogurodzica”, „Pieśń o Rolandzie”, „Rozmowa Mistrza Polikarpa ze Śmiercią”</strong>
         </p>
+      </div>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Teocentryzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Bóg w centrum całego wszechświata, życia, sztuki i zainteresowań człowieka.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Augustynizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Filozofia dramatyczna: człowiek zawieszony między aniołami a zwierzętami, wiecznie rozdarty między pokusami ciała a dążeniem duszy do Boga.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Tomizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Harmonijna wizja świata jako 'drabiny bytów' (od materii nieożywionej po anioły). Wszystko ma z góry wyznaczone, sensowne miejsce.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Danse macabre</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Taniec śmierci, motyw przypominający, że wobec śmierci wszyscy ludzie (chłopi i królowie) są absolutnie równi.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Asceza</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Wyrzeczenie się dóbr materialnych, dobrowolne cierpienie w celu osiągnięcia zbawienia (np. św. Aleksy).</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
         <h3 class="text-[15px] font-bold text-amber-300">Renesans (Odrodzenie)</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">XV w. – koniec XVI w.</span>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">XV w. – koniec XVI w.</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Powrót do antyku i humanizmu („Człowiekiem jestem i nic co ludzkie, nie jest mi obce”). Antropocentryzm stawia człowieka w centrum zainteresowania. Harmonia, pochwała życia ziemskiego, rozwój nauki (Kopernik) i sztuki. Popularny staje się motyw Arkadii i irenizm (pokój między ludźmi).
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Powrót do antyku i pochwała życia. Człowiek staje w centrum zainteresowania. Harmonia, humanizm i rozwój nauki.
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>Treny, pieśni i fraszki (J. Kochanowski)</strong>, <strong>„Odprawa posłów greckich”</strong>, <strong>„Makbet” (Szekspir to przełom renesansu i baroku)</strong>.
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>Treny, pieśni i fraszki (J. Kochanowski), „Odprawa posłów greckich”</strong>
         </p>
+      </div>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Antropocentryzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Człowiek (jego zdolności, uczucia, piękno) w centrum zainteresowania myślicieli i artystów.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Humanizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Prąd stawiający na rozwój intelektualny człowieka, znajomość języków klasycznych (łacina, greka) oraz postulat 'Człowiekiem jestem i nic co ludzkie...'.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Irenizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Nurt postulujący pokój między wyznaniami i narodami, potępiający okrucieństwo wojny (np. postulaty A. Frycza Modrzewskiego).</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Motyw Arkadii</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Mit o idyllicznej krainie spokoju, szczęścia i prostej egzystencji w harmonii z naturą (np. czarnoleska wieś u Kochanowskiego).</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
         <h3 class="text-[15px] font-bold text-amber-300">Barok</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">koniec XVI w. – 1. poł. XVIII w.</span>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">koniec XVI w. – 1. poł. XVIII w.</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Koniec harmonii. Człowiek baroku jest pełen niepokoju, rozdarty między pokusami świata (szatan) a pragnieniem zbawienia (Bóg). Epoka kontrastów, przepychu (konceptyzm) i nietolerancji (wojny religijne). Dominuje motyw vanitas (marność) i uświadomienie sobie kruchości ludzkiego życia.
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Koniec harmonii. Człowiek baroku jest pełen niepokoju, rozdarty między pokusami świata a pragnieniem zbawienia. Epoka kontrastów i wojny.
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>Wiersze J.A. Morsztyna, D. Naborowskiego i M. Sępa Szarzyńskiego</strong>, <strong>„Pamiętniki” (J.Ch. Pasek)</strong>, <strong>„Skąpiec” (Molier)</strong>.
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>Poezja D. Naborowskiego i M. Sępa Szarzyńskiego, „Pamiętniki” (Pasek)</strong>
         </p>
+      </div>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Motyw Vanitas</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Marność (Vanitas vanitatum et omnia vanitas) – silne poczucie kruchości i nietrwałości ludzkiego życia oraz wszelkich wartości materialnych.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Konceptyzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Nurt w poezji polegający na opieraniu wiersza na wybitnym pomyśle (koncepcie), szokowaniu odbiorcy i grze słów.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Sarmatyzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Polska ideologia szlachecka, wierząca w rzymskie pochodzenie polskiej szlachty, broniąca wolności szlacheckiej, często prowadząca do megalomanii i ksenofobii.</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
         <h3 class="text-[15px] font-bold text-amber-300">Oświecenie</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">XVIII wiek (w Polsce: 1764 - 1822)</span>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">XVIII wiek</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Wiek Rozumu. Dominuje racjonalizm, empiryzm i deizm. Celem literatury jest edukacja i wychowanie (dydaktyzm, utylitaryzm) – „ucząc bawi, bawiąc uczy”. W Polsce to czas walki o reformy państwa (Sejm Wielki, Konstytucja 3 maja) oraz walki z sarmackim zacofaniem.
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Wiek Rozumu. Celem literatury jest edukacja społeczeństwa (dydaktyzm). W Polsce to czas walki o ocalenie i reformy państwa (Konstytucja 3 maja).
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>Bajki, satyry i hymny (I. Krasicki)</strong>.
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>Bajki i satyry (I. Krasicki)</strong>
         </p>
+      </div>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Racjonalizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Pogard (np. Kartezjusza) zakładający, że głównym i jedynym rzetelnym źródłem poznania prawdy jest rozum ('Myślę, więc jestem').</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Empiryzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Założenie, że prawdziwą wiedzę zdobywa się wyłącznie drogą doświadczeń zmysłowych i eksperymentów (J. Locke).</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Deizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Pogląd religijny uznający, że Bóg stworzył świat (jak zegarmistrz mechanizm), ale po akcie stworzenia przestał w niego ingerować.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Utylitaryzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Postulat użyteczności – wartość człowieka lub działania ocenia się po tym, na ile są one pożyteczne dla społeczeństwa.</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
         <h3 class="text-[15px] font-bold text-amber-300">Romantyzm</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">1822 r. – 1863 r. (powstanie styczniowe)</span>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">1822 r. – 1863 r.</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Bunt przeciwko rozumowi. Najważniejsze to: irracjonalizm (wiara w czucie i wiarę), indywidualizm, miłość romantyczna (często nieszczęśliwa, prowadząca do samobójstwa), mistycyzm, bunt i fascynacja ludowością (prawa moralne prostego ludu). W Polsce to epoka wielkich zrywów niepodległościowych i mesjanizmu.
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Bunt przeciwko rozumowi. Ważne są: uczucia, wiara, indywidualizm i ludowość. W Polsce to epoka zrywów niepodległościowych i mesjanizmu.
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>„Dziady cz. III”</strong>, <strong>„Pan Tadeusz”</strong>, <strong>„Kordian”</strong>, <strong>„Cierpienia młodego Wertera”</strong>.
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>„Dziady cz. III”, „Pan Tadeusz”, „Kordian”, „Cierpienia młodego Wertera”</strong>
         </p>
+      </div>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Irracjonalizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Pogląd odrzucający potęgę rozumu. Romantycy wierzyli, że świat można poznać poprzez intuicję, wiarę, wizje i sny ('Czucie i wiara silniej mówi do mnie...').</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Mesjanizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Polska koncepcja przypisująca Polakom misję zbawienia innych narodów poddanych tyranii. Cierpienie Polski pod zaborami przyrównywano do męki Chrystusa na krzyżu.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Prometeizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Postawa bezinteresownego buntu przeciwko wyższym siłom (Bogu) w imię głębokiej miłości do ludzkości, wiążąca się z ogromnym, samotnym cierpieniem.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Winkelriedyzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Koncepcja Słowackiego (odpowiedź na mesjanizm) zakładająca aktywną i heroiczną walkę (Polska jako Winkelried narodów) przyjmująca ciosy, by inni mogli walczyć.</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
         <h3 class="text-[15px] font-bold text-amber-300">Pozytywizm</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">1864 r. – 1890 r.</span>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">1864 r. – 1890 r.</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Czas otrzeźwienia po klęsce powstania styczniowego. Zamiast walki zbrojnej – praca u podstaw (edukacja najbiedniejszych) i praca organiczna (rozwój gospodarczy całego społeczeństwa jako organizmu). Kult scjentyzmu (nauki), emancypacja kobiet, asymilacja Żydów. W literaturze króluje realizm i naturalizm.
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Otrzeźwienie po powstaniu styczniowym. Zamiast zrywów zbrojnych – kult pracy, nauki i ratowanie polskości poprzez rozwój gospodarczy.
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>„Lalka” (B. Prus)</strong>, <strong>„Zbrodnia i kara” (F. Dostojewski)</strong>, nowele (np. „Gloria victis”).
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>„Lalka” (B. Prus), nowele, „Zbrodnia i kara” (F. Dostojewski)</strong>
         </p>
+      </div>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Scjentyzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Bezkrytyczna wiara w możliwości nauki i metod badawczych. Odrzucenie metafizyki na rzecz biologii, socjologii i twardych faktów.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Praca u podstaw</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Społeczny nakaz niesienia kaganek oświaty dla najbiedniejszych warstw (chłopów, biedoty miejskiej), by włączyć ich w świadome życie narodu.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Praca organiczna</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Pojmowanie społeczeństwa jako jednego wielkiego organizmu. Każda warstwa musi być rozwinięta, bogata i współpracować, aby 'organizm' przeżył.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Asymilacja Żydów</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Postulat zrównania praw obywatelskich mniejszości i włączenia ich w rozwój polskiego społeczeństwa.</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
         <h3 class="text-[15px] font-bold text-amber-300">Młoda Polska</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">1890 r. – 1918 r.</span>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">1890 r. – 1918 r.</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Powrót do założeń romantyzmu (neoromantyzm). Dekadentyzm (poczucie schyłku, upadku kultury, zniechęcenie do życia). Sztuka dla sztuki – literatura ma być absolutna, a nie służyć celom społecznym (jak w pozytywizmie). Fascynacja chłopomanią (ucieczka na wieś) i impresjonizmem (chwytanie ulotnej chwili).
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Bunt przeciwko pozytywistycznemu pragmatyzmowi. Zwrot ku sztuce, dekadentyzmowi i poszukiwaniu piękna. Nazywana neoromantyzmem.
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>„Wesele” (S. Wyspiański)</strong>, <strong>„Chłopi” (W. Reymont)</strong>, wiersze K. Przerwy-Tetmajera.
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>„Wesele” (S. Wyspiański), „Chłopi” (W. Reymont), poezja Tetmajera</strong>
         </p>
+      </div>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Dekadentyzm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Poczucie skrajnego schyłku kultury, bezsensu istnienia ('ból istnienia', nuda, apatia) wynikające z kryzysu wartości. Uciekano przed nim w sztukę i używki.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Chłopomania</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Fascynacja warstwą chłopską przez znużoną inteligencję, połączona z idealizowaniem sił witalnych i prostoty polskiej wsi (widoczne m.in. w 'Weselu').</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Sztuka dla sztuki</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Słynny postulat (S. Przybyszewskiego) zdejmujący z literatury obowiązek edukacji czy walki politycznej. Sztuka miała być wolna, niezależna i służyć wyłączenie pięknu.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Impresjonizm i Symbolizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">W sztuce: zatrzymywanie ulotnej, mgnieniowej chwili (impresjonizm) oraz wyrażanie niewyrażalnego za pomocą wieloznacznych symboli (symbolizm).</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
         <h3 class="text-[15px] font-bold text-amber-300">Dwudziestolecie międzywojenne</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">1918 r. – 1939 r.</span>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">1918 r. – 1939 r.</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Polska odzyskuje niepodległość. Wiosna i radość, ale potem nadciąga katastrofizm (przeczucie wybuchu nowej, straszliwej wojny). Rozwój awangardy (nowoczesnej poezji, odrzucenie tradycji). W literaturze obok optymizmu Skamandrytów pojawia się mroczna groteska, psychoanaliza (Freud) i absurd.
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Wybuch radości po odzyskaniu niepodległości, a następnie narodziny katastrofizmu. Epoka rozwoju awangardy, absurdu i nowej psychologii.
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>„Przedwiośnie” (S. Żeromski)</strong>, <strong>„Ferdydurke” (W. Gombrowicz)</strong>, <strong>„Sklepy cynamonowe” (B. Schulz)</strong>, <strong>„Szewcy” (S.I. Witkiewicz)</strong>.
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>„Przedwiośnie” (S. Żeromski), „Ferdydurke” (W. Gombrowicz), „Sklepy cynamonowe” (B. Schulz)</strong>
         </p>
+      </div>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Forma (Gombrowicz)</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">U Gombrowicza ('Ferdydurke'): kulturowa i społeczna maska zakładana ludziom przez innych ('przyprawianie Gęby'). Walka człowieka o autentyczność w starciu z utartymi schematami.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Psychoanaliza</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Poglądy Z. Freuda wpływające na literaturę. Odkrycie ludzkiej podświadomości, popędów, kompleksów oraz mechanizmów działania snów i tłumionych lęków.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Katastrofizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Pesymistyczny prąd (narastający w latach 30.) przewidujący ostateczny, nieuchronny upadek cywilizacji, kultury oraz zbliżającą się nową, okrutną wojnę.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Groteska i Absurd</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Przedstawianie zjawisk wyolbrzymionych, absurdalnych, gdzie tragizm miesza się z komizmem (występuje masowo u Schulza, Gombrowicza, Witkacego).</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-amber-500/50 transition duration-300">
       <div class="flex justify-between items-start mb-2">
-        <h3 class="text-[15px] font-bold text-amber-300">Wojna i okupacja</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">1939 r. – 1945 r.</span>
+        <h3 class="text-[15px] font-bold text-amber-300">Wojna i okupacja (oraz literatura powojenna)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 text-right">od 1939 r.</span>
       </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Czas próby (tzw. apokalipsa spełniona). Brutalna konfrontacja przedwojennych ideałów z barbarzyństwem wojny. Literaci to często żołnierze (Pokolenie Kolumbów). Główne tematy to heroizm, tragizm wyborów moralnych w nieludzkich czasach, Holokaust oraz działalność obozów koncentracyjnych.
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        Brutalna konfrontacja człowieczeństwa z totalitaryzmami, Holokaustem i absurdalnym zniewoleniem. Próba pisania o utraconych wartościach.
       </p>
-      <div class="pt-3 border-t border-slate-800/50">
+      <div class="mb-4">
         <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>Poezja K.K. Baczyńskiego</strong>, <strong>„Inny świat” (G. Herling-Grudziński)</strong>, <strong>„Zdążyć przed Panem Bogiem” (H. Krall - literatura powojenna o wojnie)</strong>.
+          <strong class="text-indigo-300 block mb-1">📚 Główne lektury z tej epoki:</strong>
+          <strong>Poezja Kolumbów, „Inny świat” (Herling-Grudziński), „Rok 1984” (Orwell), „Tango” (Mrożek)</strong>
         </p>
       </div>
-    </div>
-    
-    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
-      <div class="flex justify-between items-start mb-2">
-        <h3 class="text-[15px] font-bold text-amber-300">Współczesność</h3>
-        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">od 1945 r.</span>
-      </div>
-      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
-        Literatura po Holokauście. Pytanie: „jak pisać po Auschwitz?”. Podejmowanie problemów totalitaryzmu (komunizm, zniewolenie jednostki), absurdu i groteski w życiu społecznym, alienacji człowieka w wielkim mieście oraz moralności (jak zachować się przyzwoicie). Poszukiwanie tożsamości w świecie bez stałych wartości.
-      </p>
-      <div class="pt-3 border-t border-slate-800/50">
-        <p class="text-[11px] text-slate-400">
-          <strong class="text-emerald-400 block mb-1">Główne lektury z tej epoki:</strong>
-          <strong>„Tango” (S. Mrożek)</strong>, <strong>„Rok 1984” (G. Orwell)</strong>, <strong>„Dżuma” (A. Camus)</strong>, wiersze Z. Herberta, W. Szymborskiej.
-        </p>
+      
+      <!-- Interactive Area -->
+      <div class="mt-auto pt-3 border-t border-slate-800/50">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span').innerText = this.nextElementSibling.classList.contains('hidden') ? '▼ Rozwiń główne myśli i nurty' : '▲ Zwiń szczegóły'" class="w-full text-left text-xs font-bold text-amber-500/80 hover:text-amber-400 transition outline-none">
+          <span>▼ Rozwiń główne myśli i nurty</span>
+        </button>
+        <div class="hidden mt-4 bg-slate-900/50 p-3 rounded-xl border border-slate-800/80">
+          
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Apokalipsa spełniona</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Koniec świata u Kolumbów to nie proroctwo – to otaczająca ich wojenna rzeczywistość bombardowań, ruin i ludobójstwa, z którą muszą sobie radzić fizycznie i psychicznie.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Lagrowanie</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Wpływ obozu pracy (łagru/lagru) na psychikę ludzką – destrukcja moralności, instynkt samozachowawczy ponad wszystkim, konieczność przystosowania się do odwróconego dekalogu.</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Egzystencjalizm</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Filozofia (J.P. Sartre, A. Camus) twierdząca, że życie jest absurdem bez z góry narzuconego sensu. Człowiek musi sam stworzyć wartości poprzez swoje czyny (np. walkę z 'dżumą').</p>
+        </div>
+        
+        <div class="mb-3">
+          <h4 class="text-xs font-bold text-emerald-400 mb-1">🔸 Postmodernizm i Teatr Absurdu</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">Brak jednej prawdy obiektywnej. Literatura rozbija tradycyjne schematy, chętnie używa ironii, a w Teatrze Absurdu (Mrożek, Beckett) ukazuje się bezradność człowieka we współczesnym świecie.</p>
+        </div>
+        
+        </div>
       </div>
     </div>
     
