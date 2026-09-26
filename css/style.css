@@ -1,0 +1,116 @@
+/* Custom styles for MaturaPolski100 platform */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #3730a3;
+  --accent: #f59e0b;
+  --danger: #ef4444;
+  --success: #10b981;
+  --bg-dark: #0f172a;
+  --card-dark: #1e293b;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Interactive highlights in model essays */
+.cke-thesis {
+  background-color: rgba(245, 158, 11, 0.2);
+  border-bottom: 2px solid #f59e0b;
+  padding: 1px 4px;
+  border-radius: 3px;
+  cursor: help;
+}
+
+.cke-argument {
+  background-color: rgba(79, 70, 229, 0.2);
+  border-bottom: 2px solid #6366f1;
+  padding: 1px 4px;
+  border-radius: 3px;
+  cursor: help;
+}
+
+.cke-context {
+  background-color: rgba(16, 185, 129, 0.2);
+  border-bottom: 2px solid #10b981;
+  padding: 1px 4px;
+  border-radius: 3px;
+  cursor: help;
+}
+
+.cke-connector {
+  background-color: rgba(236, 72, 153, 0.2);
+  border-bottom: 2px solid #ec4899;
+  padding: 1px 4px;
+  border-radius: 3px;
+  cursor: help;
+}
+
+.cke-conclusion {
+  background-color: rgba(14, 165, 233, 0.2);
+  border-bottom: 2px solid #0ea5e9;
+  padding: 1px 4px;
+  border-radius: 3px;
+  cursor: help;
+}
+
+/* Tab Active Styles */
+.nav-tab.active {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.39);
+}
+
+/* Card Glow Effect */
+.card-glow:hover {
+  box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.2), 0 8px 10px -6px rgba(99, 102, 241, 0.2);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+/* Pill Badges */
+.badge-cardinal {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+}
+
+/* Print Optimization */
+@media print {
+  aside, nav, button, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

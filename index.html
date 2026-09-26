@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="pl" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaturaPolski100 • Przygotowanie Od Zera do 100% z Języka Polskiego CKE</title>
+  <meta name="description" content="Kompleksowy portal edukacyjny przygotowujący do matury podstawowej z języka polskiego CKE od podstaw. Analiza ostatnich 5 lat matur, schemat rozprawki na 35 pkt, notatka syntetyzująca 4 pkt, interpunkcja i tarcza antykardynalna.">
+  
+  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS (Lokalnie offline + fallback) -->
+  <script src="js/tailwind.min.js"></script>
+  <script>
+    if (typeof tailwind === 'undefined') {
+      document.write('<script src="https://cdn.tailwindcss.com"><\/script>');
+    }
+  </script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+              950: '#1e1b4b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-indigo-900 via-indigo-700 to-purple-800 text-white text-xs py-2 px-4 text-center font-medium shadow-md flex items-center justify-center gap-2">
+    <span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-white/20 text-[11px] font-bold uppercase tracking-wider">Formuła 2023 & 2024-2026</span>
+    <span>Oficjalne wymagania CKE • Uszczuplona podstawa programowa • 60/60 punktów od zera</span>
+  </div>
+
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-indigo-500/30 border border-white/10">
+          PL
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-xl font-extrabold tracking-tight text-white">MaturaPolski<span class="text-indigo-400">100</span></h1>
+            <span class="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">CKE MASTER</span>
+          </div>
+          <p class="text-xs text-slate-400">Od zera do 100% z matury podstawowej z języka polskiego</p>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-4 text-xs font-semibold text-slate-300">
+        <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Analiza matur 2021–2025</span>
+        </div>
+        <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800">
+          <span>🛡️ Tarcza Antykardynalna</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs Bar -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800/80 overflow-x-auto">
+      <nav class="flex space-x-2 py-2 text-xs font-medium whitespace-nowrap scrollbar-none">
+        <button class="nav-tab active px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-intro">
+          <span>🧭 0. Od Zera do 100%</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-cke-anatomy">
+          <span>📊 1. Anatomia CKE & Kalkulator</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-synthesis">
+          <span>✍️ 2. Notatka Syntetyzująca (4 pkt)</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-essay-blueprint">
+          <span>📐 3. Żelazny Schemat Rozprawki (35 pkt)</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-5-years">
+          <span>📚 4. Bank 5 Lat Matur (2021-2025)</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-books">
+          <span>📖 5. Lektury & Błąd Kardynalny</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-contexts">
+          <span>🧠 Bank Kontekstów CKE</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-punctuation">
+          <span>✒️ 6. Kropka vs Przecinek & Składnia</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-wizard">
+          <span>⚡ 7. Kreator Wypracowania</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-section-inspector">
+          <span>🔬 8. Inspektor Części Rozprawki</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-evaluator">
+          <span>⚖️ 9. Egzaminator CKE (Cała Rozprawka)</span>
+        </button>
+        <button class="nav-tab px-3.5 py-2 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-2" data-tab="tab-quiz">
+          <span>🎯 10. Quiz Egzaminacyjny</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- ========================================================================= -->
+    <!-- TAB 0: START OD ZERA DO 100% (PRZEWODNIK STRATEGICZNY) -->
+    <!-- ========================================================================= -->
+    <section id="tab-intro" class="tab-content space-y-8">
+      <!-- Hero Banner -->
+      <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-indigo-950/90 via-slate-900 to-slate-950 border border-indigo-500/30 shadow-2xl relative overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10 max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 text-xs font-semibold mb-4">
+            <span>🚀 ZACZYNAMY OD ZERA: KROK PO KROKU</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            Nie umiesz nic z polskiego? <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-300 to-amber-300">
+              Oto jak zdobyć 100% z matury podstawowej.
+            </span>
+          </h2>
+          <p class="mt-4 text-slate-300 text-base sm:text-lg leading-relaxed">
+            Matura z języka polskiego nie sprawdza „wrodzonego talentu literackiego” ani „artystycznej duszy”. To <strong>bezwzględny algorytm CKE</strong>. Jeśli znasz schemat rozprawki, żelazne reguły notatki syntetyzującej oraz podstawowe fakty fabularne (bez błędu kardynalnego), egzaminator <strong>MERYTORYCZNIE MUSI</strong> przyznać Ci maksymalną liczbę punktów.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <button onclick="document.querySelector('[data-tab=\'tab-cke-anatomy\']').click()" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold shadow-lg shadow-indigo-600/30 transition transform hover:-translate-y-0.5">
+              Sprawdź Zasady Oceniania CKE & Kalkulator →
+            </button>
+            <button onclick="document.querySelector('[data-tab=\'tab-essay-blueprint\']').click()" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-bold border border-slate-700 transition">
+              Poznaj Żelazny Schemat Rozprawki (35 pkt)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Filary Zdania Matury na 100% -->
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+          <span>🏛️ Cztery Żelazne Filary Sukcesu na Maturze Podstawowej</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/40 transition">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-lg mb-3">1</div>
+            <h4 class="text-base font-bold text-white mb-2">Zero Błędów Kardynalnych</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Błąd kardynalny to całkowite przekręcenie fabuły lektury obowiązkowej (np. „Wokulski poślubił Izabelę”). Jeden błąd = <strong>0 pkt za całe wypracowanie</strong>. Nasza Tarcza Antykardynalna daje Ci 100% bezpieczeństwa.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/40 transition">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-lg mb-3">2</div>
+            <h4 class="text-base font-bold text-white mb-2">Notatka Syntetyzująca (4/4 pkt)</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Ściśle 60–90 słów. Zakaz streszczania po kolei! Porównujesz stanowiska obu autorów w 4 logicznych zdaniach. W 15 minut masz w kieszeni 4 punkty, które decydują o zdaniu.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/40 transition">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-lg mb-3">3</div>
+            <h4 class="text-base font-bold text-white mb-2">5-Akapitowy Schemat Rozprawki</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Wstęp z tezą + Lektura Obowiązkowa + Drugi Utwór + Dwa Konteksty Funkcjonalne + Zakończenie. Bez lania wody, z precyzyjnymi konektorami logicznymi na 35/35 pkt.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/40 transition">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-lg mb-3">4</div>
+            <h4 class="text-base font-bold text-white mb-2">Żelazna Kropka & Przecinek</h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Koniec z potwornymi zdaniami-tasiemcami! Tniemy zdania po maksymalnie dwóch czasownikach. Stawiasz przecinki tam, gdzie CKE tego żąda, i zyskujesz pełne punkty za język i kompozycję.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Action Roadmap -->
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <h3 class="text-lg font-bold text-white mb-4">🗺️ Twoja Ścieżka Przygotowania (Wybierz Moduł)</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+          <a href="#" onclick="document.querySelector('[data-tab=\'tab-cke-anatomy\']').click()" class="p-4 rounded-xl bg-slate-800/60 hover:bg-indigo-950/40 border border-slate-700/60 transition block">
+            <span class="font-bold text-indigo-400 block mb-1">Krok 1: Anatomia CKE</span>
+            <span class="text-slate-300">Dowiedz się, za co dostaje się punkty, a co zeruje maturę. Użyj kalkulatora.</span>
+          </a>
+          <a href="#" onclick="document.querySelector('[data-tab=\'tab-synthesis\']').click()" class="p-4 rounded-xl bg-slate-800/60 hover:bg-indigo-950/40 border border-slate-700/60 transition block">
+            <span class="font-bold text-indigo-400 block mb-1">Krok 2: Notatka 60-90 słów</span>
+            <span class="text-slate-300">Opanuj wzór na 4/4 punkty i przetestuj swój tekst w żywym analizatorze.</span>
+          </a>
+          <a href="#" onclick="document.querySelector('[data-tab=\'tab-essay-blueprint\']').click()" class="p-4 rounded-xl bg-slate-800/60 hover:bg-indigo-950/40 border border-slate-700/60 transition block">
+            <span class="font-bold text-indigo-400 block mb-1">Krok 3: Szablon Wypracowania</span>
+            <span class="text-slate-300">Zobacz matematyczny rozkład 5 akapitów i bank erudycyjnych konektorów.</span>
+          </a>
+          <a href="#" onclick="document.querySelector('[data-tab=\'tab-5-years\']').click()" class="p-4 rounded-xl bg-slate-800/60 hover:bg-indigo-950/40 border border-slate-700/60 transition block">
+            <span class="font-bold text-indigo-400 block mb-1">Krok 4: Bank 5 Lat Matur</span>
+            <span class="text-slate-300">Przeczytaj wzorcowe wypracowania z lat 2021–2025 z adnotacjami egzaminatora CKE.</span>
+          </a>
+          <a href="#" onclick="document.querySelector('[data-tab=\'tab-books\']').click()" class="p-4 rounded-xl bg-slate-800/60 hover:bg-indigo-950/40 border border-slate-700/60 transition block">
+            <span class="font-bold text-indigo-400 block mb-1">Krok 5: Encyklopedia Lektur</span>
+            <span class="text-slate-300">12 kluczowych lektur z tarczą antykardynalną – nigdy nie pomylisz faktów.</span>
+          </a>
+          <a href="#" onclick="document.querySelector('[data-tab=\'tab-punctuation\']').click()" class="p-4 rounded-xl bg-slate-800/60 hover:bg-indigo-950/40 border border-slate-700/60 transition block">
+            <span class="font-bold text-indigo-400 block mb-1">Krok 6: Kropka vs Przecinek</span>
+            <span class="text-slate-300">Rozwiąż interaktywne ćwiczenia i przestań tracić punkty na interpunkcji.</span>
+          </a>
+          <a href="#" onclick="document.querySelector('[data-tab=\'tab-wizard\']').click()" class="p-4 rounded-xl bg-slate-800/60 hover:bg-indigo-950/40 border border-slate-700/60 transition block">
+            <span class="font-bold text-indigo-400 block mb-1">Krok 7: Generator Rozprawki</span>
+            <span class="text-slate-300">Wygeneruj szkielet rozprawki z gotowymi zdaniami na dowolny temat.</span>
+          </a>
+          <a href="#" onclick="document.querySelector('[data-tab=\'tab-evaluator\']').click()" class="p-4 rounded-xl bg-gradient-to-br from-indigo-900/50 to-purple-950/50 hover:from-indigo-900/70 border border-indigo-500/50 transition block">
+            <span class="font-bold text-amber-300 block mb-1">⚖️ Krok 8: Egzaminator CKE</span>
+            <span class="text-slate-200">Wklej swoje wypracowanie – algorytm wystawi ocenę (35 pkt) i wskaże błędy.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 1: ANATOMIA EGZAMINU CKE & KALKULATOR -->
+    <!-- ========================================================================= -->
+    <section id="tab-cke-anatomy" class="tab-content hidden space-y-8">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">System Oceniania CKE & Interaktywny Kalkulator Punktów</h2>
+        <p class="text-sm text-slate-400">Zobacz dokładnie, z czego składa się arkusz maturalny (60 pkt) i przetestuj swój wynik na żywym symulatorze punktacji.</p>
+      </div>
+
+      <!-- Karty 3 części arkusza -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center justify-between mb-3">
+            <span class="px-2.5 py-1 text-xs font-bold rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Część 1</span>
+            <span class="text-xl font-black text-indigo-400">10 PKT</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Język Polski w Użyciu</h3>
+          <p class="text-xs text-slate-300 mb-3 leading-relaxed">2 teksty niefikcjonalne (popularnonaukowe lub publicystyczne) i zadania do nich.</p>
+          <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+            <li>Czytanie ze zrozumieniem i relacje logiczne (6 pkt)</li>
+            <li><strong>Notatka syntetyzująca (4 pkt, 60–90 słów)</strong></li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center justify-between mb-3">
+            <span class="px-2.5 py-1 text-xs font-bold rounded bg-purple-500/20 text-purple-300 border border-purple-500/30">Część 2</span>
+            <span class="text-xl font-black text-purple-400">15 PKT</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Test Historycznoliteracki</h3>
+          <p class="text-xs text-slate-300 mb-3 leading-relaxed">Zadania sprawdzające epoki, toposy i lektury obowiązkowe od antyku do współczesności.</p>
+          <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+            <li>Rozpoznawanie autorów i dzieł po fragmencie</li>
+            <li>Wyjaśnianie alegorii i symboliki (np. w Weselu)</li>
+            <li>Porównywanie postaw bohaterów między epokami</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center justify-between mb-3">
+            <span class="px-2.5 py-1 text-xs font-bold rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">Część 3</span>
+            <span class="text-xl font-black text-amber-400">35 PKT</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Wypracowanie (Min. 300 słów)</h3>
+          <p class="text-xs text-slate-300 mb-3 leading-relaxed">Dwa tematy do wyboru bez załączonych fragmentów tekstów.</p>
+          <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+            <li>Spełnienie warunków polecenia (0-1 pkt)</li>
+            <li>Kompetencje literackie i konteksty (0-16 pkt)</li>
+            <li>Kompozycja i spójność (0-7 pkt)</li>
+            <li>Język, ortografia i interpunkcja (0-11 pkt)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Interaktywny Kalkulator CKE -->
+      <div class="p-6 sm:p-8 rounded-3xl bg-slate-900 border border-slate-800 shadow-xl">
+        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4 mb-6">
+          <div>
+            <h3 class="text-xl font-bold text-white">🧮 Interaktywny Symulator Oceny Egzaminatora CKE</h3>
+            <p class="text-xs text-slate-400">Przesuwaj suwaki, aby zobaczyć, jak drobne błędy wpływają na końcowy wynik matury.</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="text-right">
+              <span class="text-xs text-slate-400 uppercase tracking-wider block">Wynik Całkowity:</span>
+              <span id="calc-total-points" class="text-2xl sm:text-3xl font-black text-indigo-400">60/60 pkt</span>
+            </div>
+            <div class="text-right pl-4 border-l border-slate-800">
+              <span class="text-xs text-slate-400 uppercase tracking-wider block">Procent:</span>
+              <span id="calc-percentage" class="text-2xl sm:text-3xl font-black text-white">100%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ostrzeżenie błędu kardynalnego w symulatorze -->
+        <div id="calc-cardinal-alert" class="hidden p-4 rounded-xl bg-rose-950/80 border border-rose-600 text-rose-200 text-xs mb-6 animate-pulse">
+          🚨 <strong>ZASTOSOWANO BŁĄD KARDYNALNY!</strong> Egzaminator CKE natychmiast przyznaje 0 punktów za całe wypracowanie (0/35 pkt)! Twój wynik wypracowania został wyzerowany.
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Kolumna lewa: Część 1 i 2 oraz Warunki Formalne -->
+          <div class="space-y-5 text-xs">
+            <h4 class="font-bold text-indigo-400 uppercase tracking-wider text-[11px]">Część I & II Arkusza</h4>
+            
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Część 1: Język polski w użyciu (w tym notatka syntetyzująca):</span>
+                <strong id="calc-p1-val" class="text-indigo-400">10/10</strong>
+              </div>
+              <input type="range" id="calc-p1" min="0" max="10" value="10" class="w-full accent-indigo-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Część 2: Test historycznoliteracki (epoki i lektury):</span>
+                <strong id="calc-p2-val" class="text-indigo-400">15/15</strong>
+              </div>
+              <input type="range" id="calc-p2" min="0" max="15" value="15" class="w-full accent-indigo-500">
+            </div>
+
+            <div class="pt-4 border-t border-slate-800">
+              <h4 class="font-bold text-amber-400 uppercase tracking-wider text-[11px] mb-3">Wypracowanie: Warunki Formalne & Przełącznik Kardynalny</h4>
+              
+              <div class="p-3 rounded-xl bg-slate-800/60 border border-slate-700/60 flex items-center justify-between mb-4">
+                <div>
+                  <div class="font-bold text-white text-xs">Zaznacz błąd kardynalny (test katastrofy)</div>
+                  <div class="text-[11px] text-slate-400">Sprawdź, co dzieje się, gdy pomylisz losy bohatera lektury obowiązkowej</div>
+                </div>
+                <input type="checkbox" id="calc-cardinal" class="w-5 h-5 accent-rose-600 rounded">
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span>Spełnienie warunków polecenia (SFWP - min. 300 słów):</span>
+                  <strong id="calc-sfwp-val" class="text-amber-400">1/1</strong>
+                </div>
+                <input type="range" id="calc-sfwp" min="0" max="1" value="1" class="w-full accent-amber-500">
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolumna prawa: Kryteria szczegółowe wypracowania -->
+          <div class="space-y-5 text-xs">
+            <div class="flex items-center justify-between">
+              <h4 class="font-bold text-amber-400 uppercase tracking-wider text-[11px]">Kryteria Wypracowania (35 pkt)</h4>
+              <span id="calc-essay-points" class="font-mono font-bold text-amber-300">35/35 pkt</span>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Kompetencje literackie i kulturowe (KLiK - lektury & 2 konteksty):</span>
+                <strong id="calc-klik-val" class="text-amber-400">16/16</strong>
+              </div>
+              <input type="range" id="calc-klik" min="0" max="16" value="16" class="w-full accent-amber-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Kompozycja tekstu (struktura, spójność, styl):</span>
+                <strong id="calc-komp-val" class="text-amber-400">7/7</strong>
+              </div>
+              <input type="range" id="calc-komp" min="0" max="7" value="7" class="w-full accent-amber-500">
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Zakres i poprawność środków językowych:</span>
+                <strong id="calc-jezyk-val" class="text-amber-400">7/7</strong>
+              </div>
+              <input type="range" id="calc-jezyk" min="0" max="7" value="7" class="w-full accent-amber-500">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span>Ortografia:</span>
+                  <strong id="calc-orto-val" class="text-amber-400">2/2</strong>
+                </div>
+                <input type="range" id="calc-orto" min="0" max="2" value="2" class="w-full accent-amber-500">
+                <span class="text-[10px] text-slate-500">0-1 błąd = 2 pkt; 2-3 = 1; 4+ = 0</span>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span>Interpunkcja:</span>
+                  <strong id="calc-interp-val" class="text-amber-400">2/2</strong>
+                </div>
+                <input type="range" id="calc-interp" min="0" max="2" value="2" class="w-full accent-amber-500">
+                <span class="text-[10px] text-slate-500">0-4 błędy = 2 pkt; 5-8 = 1; 9+ = 0</span>
+              </div>
+            </div>
+
+            <div class="pt-2 flex items-center justify-between">
+              <span class="text-slate-400">Status Egzaminu:</span>
+              <div id="calc-status-badge"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 2: NOTATKA SYNTETYZUJĄCA (4 PUNKTY) -->
+    <!-- ========================================================================= -->
+    <section id="tab-synthesis" class="tab-content hidden space-y-8">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold mb-2">
+          <span>CZĘŚĆ I ARKUSZA • 4 PUNKTY W 15 MINUT</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Formuła Notatki Syntetyzującej: 4/4 Punktów</h2>
+        <p class="text-sm text-slate-400">Większość maturzystów traci tu punkty, ponieważ streszcza teksty po kolei. Poznaj 4-zdaniowy algorytm CKE i przetestuj swój tekst w żywym analizatorze.</p>
+      </div>
+
+      <!-- 3 Złote Zasady CKE -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">
+          <span class="text-amber-400 font-bold text-base block mb-2">1. Żelazny Limit: 60–90 słów</span>
+          <p class="text-slate-300 leading-relaxed">
+            Jeśli Twoja notatka liczy <strong>59 słów</strong> lub <strong>91 słów</strong>, egzaminator automatycznie ucina punkty za spełnienie warunków zadania. Zawsze trzymaj się bezpiecznego środka: <strong>ok. 70–75 słów</strong>.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">
+          <span class="text-rose-400 font-bold text-base block mb-2">2. Bezwzględny Zakaz Streszczania</span>
+          <p class="text-slate-300 leading-relaxed">
+            NIGDY nie pisz: <em>„W pierwszym tekście autor pisze o... Z kolei w drugim tekście autor stwierdza...”</em>. Za takie ujęcie egzaminator obcina punkty za syntezę i spójność!
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">
+          <span class="text-emerald-400 font-bold text-base block mb-2">3. Synteza Porównawcza</span>
+          <p class="text-slate-300 leading-relaxed">
+            Zestawiaj myśli obu autorów w jednym wątku. Pokaż wspólny temat, różnicę perspektyw lub to, jak jeden autor uzupełnia drugiego, a na końcu sformułuj wspólny wniosek.
+          </p>
+        </div>
+      </div>
+
+      <!-- Wzór 4 Zdań na 4 Punkty -->
+      <div class="p-6 rounded-2xl bg-indigo-950/40 border border-indigo-800/50">
+        <h3 class="text-base font-bold text-white mb-3">📐 Uniwersalny Algorytm 4 Zdań (Krok po Kroku)</h3>
+        <div class="space-y-3 text-xs">
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+            <strong class="text-indigo-300 block mb-1">Zdanie 1 (Wprowadzenie wspólnego zagadnienia):</strong>
+            <span class="text-slate-200">„Autorzy obu tekstów podejmują refleksję nad [wspólny problem z polecenia]...”</span>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+            <strong class="text-indigo-300 block mb-1">Zdanie 2 (Stanowisko pierwszego autora):</strong>
+            <span class="text-slate-200">„Pierwszy z publicystów zwraca uwagę na [kluczowa myśl tekstu A], akcentując [istotny szczegół]...”</span>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+            <strong class="text-indigo-300 block mb-1">Zdanie 3 (Stanowisko drugiego autora w relacji do pierwszego):</strong>
+            <span class="text-slate-200">„Z kolei drugi autor poszerza tę perspektywę (lub: prezentuje odmienne stanowisko), wskazując, że [kluczowa myśl tekstu B]...”</span>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800">
+            <strong class="text-indigo-300 block mb-1">Zdanie 4 (Wniosek syntetyczny):</strong>
+            <span class="text-slate-200">„Wspólną konkluzją obu rozważań jest przekonanie, że [ogólna prawda łącząca oba teksty]...”</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interaktywny Warsztat Notatki Syntetyzującej -->
+      <div class="p-6 sm:p-8 rounded-3xl bg-slate-900 border border-slate-800">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div>
+            <h3 class="text-lg font-bold text-white">🧪 Interaktywny Symulator & Licznik Słów CKE</h3>
+            <p class="text-xs text-slate-400">Wpisz swój tekst lub załaduj wzorcowy przykład, aby sprawdzić limit słów i poprawność syntezy.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button class="load-synthesis-example px-3 py-1.5 text-xs rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition">
+              Wzorzec 1 (Czytanie)
+            </button>
+            <button class="load-synthesis-example px-3 py-1.5 text-xs rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition">
+              Wzorzec 2 (Podróże)
+            </button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <textarea id="synthesis-input" rows="6" placeholder="Wklej lub napisz tutaj swoją notatkę syntetyzującą..." class="w-full p-4 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition leading-relaxed"></textarea>
+          
+          <div class="flex items-center justify-between mt-3 text-xs">
+            <div class="flex items-center gap-3">
+              <span class="text-slate-400 font-mono">Liczba wyrazów: <strong id="synthesis-word-count" class="text-indigo-400 text-sm font-bold">0 słów</strong></span>
+              <span class="text-slate-500 font-mono">(wymóg: 60 - 90)</span>
+            </div>
+            <div id="synthesis-status-badge"></div>
+          </div>
+        </div>
+
+        <div id="synthesis-warnings" class="mt-4 space-y-2"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 3: ŻELAZNY SCHEMAT ROZPRAWKI (35 PUNKTÓW) -->
+    <!-- ========================================================================= -->
+    <section id="tab-essay-blueprint" class="tab-content hidden space-y-8">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold mb-2">
+          <span>NAJWIĘCEJ PUNKTÓW NA MATURZE • 35/60 PKT</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Żelazny 5-Akapitowy Schemat Rozprawki (35/35 PKT)</h2>
+        <p class="text-sm text-slate-400">Wypracowanie to matematyczna struktura. Oto plan każdego z 5 akapitów, który gwarantuje komplet punktów za kompozycję, spójność i kompetencje literackie.</p>
+      </div>
+
+      <!-- Struktura 5 akapitów -->
+      <div class="space-y-4">
+        <!-- Akapit 1: Wstęp -->
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center justify-between gap-3 mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-300 flex items-center justify-center font-bold text-xs">1</span>
+              <h3 class="text-base font-bold text-white">Akapit I: Wstęp & Jasna Teza (ok. 50–70 słów)</h3>
+            </div>
+            <span class="text-xs text-amber-400 font-mono">Klucz: Brak banałów</span>
+          </div>
+          <p class="text-xs text-slate-300 mb-3 leading-relaxed">
+            Nigdy nie zaczynaj od: <em>„Od zarania dziejów ludzie zadawali sobie pytanie...”</em>. Zamiast tego zdefiniuj problem badawczy i natychmiast postaw <strong>jednoznaczną tezę</strong>.
+          </p>
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 space-y-1 font-mono">
+            <div>1. Zdanie wprowadzające problem z tematu.</div>
+            <div>2. Doprecyzowanie dylematu moralnego lub egzystencjalnego.</div>
+            <div>3. <strong>Teza główna:</strong> „Uważam, że [jasna odpowiedź na pytanie z tematu]”.</div>
+            <div>4. Zapowiedź lektur: „Twierdzenie to uzasadnię w oparciu o [lektura 1] oraz [lektura 2]”.</div>
+          </div>
+        </div>
+
+        <!-- Akapit 2: Lektura Obowiązkowa -->
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center justify-between gap-3 mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-bold text-xs">2</span>
+              <h3 class="text-base font-bold text-white">Akapit II: Rozwinięcie I – Lektura Obowiązkowa (ok. 120–140 słów)</h3>
+            </div>
+            <span class="text-xs text-indigo-400 font-mono">Klucz: Analiza, nie streszczenie</span>
+          </div>
+          <p class="text-xs text-slate-300 mb-3 leading-relaxed">
+            Nie streszczaj całej powieści! Skup się wyłącznie na konkretnej sytuacji bohatera, która udowadnia Twoją tezę.
+          </p>
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 space-y-1 font-mono">
+            <div>1. <strong>Teza cząstkowa:</strong> „Potwierdzeniem powyższego stanowiska są losy bohatera [Autor] pt. [Tytuł]”.</div>
+            <div>2. Przywołanie konkretnej sceny lub wyboru moralnego.</div>
+            <div>3. Pogłębiona analiza motywacji bohatera pod kątem zadanego tematu.</div>
+            <div>4. <strong>Wniosek cząstkowy:</strong> „Sytuacja ta dobitnie dowodzi, że...”.</div>
+          </div>
+        </div>
+
+        <!-- Akapit 3: Drugi Utwór Literacki -->
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center justify-between gap-3 mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-bold text-xs">3</span>
+              <h3 class="text-base font-bold text-white">Akapit III: Rozwinięcie II – Drugi Utwór Literacki (ok. 120–140 słów)</h3>
+            </div>
+            <span class="text-xs text-indigo-400 font-mono">Klucz: Kontrast lub poszerzenie</span>
+          </div>
+          <p class="text-xs text-slate-300 mb-3 leading-relaxed">
+            Drugi utwór może być lekturą obowiązkową, inną książką, wierszem lub opowiadaniem. Pokaż inną perspektywę na ten sam problem.
+          </p>
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 space-y-1 font-mono">
+            <div>1. <strong>Konektor przejścia:</strong> „Zgoła odmienną (lub: komplementarną) perspektywę prezentuje [Autor] w [Tytuł]”.</div>
+            <div>2. Wprowadzenie sytuacji i postawy drugiego bohatera.</div>
+            <div>3. Zestawienie wniosków z obu utworów.</div>
+            <div>4. Wniosek cząstkowy łączący z tezą wypracowania.</div>
+          </div>
+        </div>
+
+        <!-- Akapit 4: Konteksty Funkcjonalne -->
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center justify-between gap-3 mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-xs">4</span>
+              <h3 class="text-base font-bold text-white">Konteksty Funkcjonalne (Min. Dwa Konteksty)</h3>
+            </div>
+            <span class="text-xs text-emerald-400 font-mono">Klucz: Funkcjonalność, nie ciekawostki</span>
+          </div>
+          <p class="text-xs text-slate-300 mb-3 leading-relaxed">
+            CKE wymaga odwołania do <strong>co najmniej dwóch kontekstów</strong> (historyczny, biograficzny, filozoficzny, literacki/mitologiczny, społeczny). Możesz je wpleść w rozwinięcia I i II lub poświęcić im osobny krótki akapit.
+          </p>
+
+          <!-- Tabela CKE: Dobry vs Zły Kontekst -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-rose-950/30 border border-rose-800/50 text-rose-200">
+              <strong class="text-rose-400 block mb-1">❌ BŁĄD: Kontekst Pozorny (0 pkt CKE)</strong>
+              „Bolesław Prus naprawdę nazywał się Aleksander Głowacki i żył w XIX wieku w Warszawie.”<br>
+              <em>(Czysta ciekawostka niemająca żadnego wpływu na interpretację problemu z tematu).</em>
+            </div>
+            <div class="p-3 rounded-xl bg-emerald-950/30 border border-emerald-800/50 text-emerald-200">
+              <strong class="text-emerald-400 block mb-1">✅ PRAWIDŁOWO: Kontekst Funkcjonalny (2 pkt CKE)</strong>
+              „Pozytywistyczna koncepcja pracy organicznej wpłynęła na postawę Wokulskiego, który poprzez handel i wspieranie biedoty Powiśla starał się zreformować zacofane społeczeństwo.”
+            </div>
+          </div>
+        </div>
+
+        <!-- Akapit 5: Zakończenie -->
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center justify-between gap-3 mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-sky-500/20 text-sky-300 flex items-center justify-center font-bold text-xs">5</span>
+              <h3 class="text-base font-bold text-white">Akapit V: Zakończenie & Uniwersalna Puenta (ok. 50–70 słów)</h3>
+            </div>
+            <span class="text-xs text-sky-400 font-mono">Klucz: Parafraza, nie powtórzenie</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 space-y-1 font-mono">
+            <div>1. <strong>Parafraza tezy:</strong> „Podsumowując powyższe rozważania, należy stwierdzić, że...”.</div>
+            <div>2. Syntetyczne zebranie wniosków z obu lektur (w czym były zgodne, w czym się różniły).</div>
+            <div>3. <strong>Uniwersalna puenta humanistyczna:</strong> głęboka myśl o człowieku i kondycji ludzkiej.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bank Erudycyjnych Konektorów CKE (do skopiowania) -->
+      <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <h3 class="text-lg font-bold text-white mb-3">💎 Skarbiec Konektorów Logicznych (Gwarancja 7/7 za Styl i Kompozycję)</h3>
+        <p class="text-xs text-slate-400 mb-4">Używaj tych gotowych zwrotów, aby płynnie łączyć myśli i akapity. Kliknij, aby skopiować zwrot:</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 text-xs">
+          <button class="copy-connector-btn p-2.5 rounded-lg bg-slate-800/80 hover:bg-indigo-900/50 border border-slate-700 text-left text-slate-200 transition" data-text="Potwierdzeniem powyższej tezy są losy bohatera...">
+            „Potwierdzeniem powyższej tezy są...”
+          </button>
+          <button class="copy-connector-btn p-2.5 rounded-lg bg-slate-800/80 hover:bg-indigo-900/50 border border-slate-700 text-left text-slate-200 transition" data-text="Zgoła odmienną perspektywę prezentuje autor w dziele...">
+            „Zgoła odmienną perspektywę prezentuje...”
+          </button>
+          <button class="copy-connector-btn p-2.5 rounded-lg bg-slate-800/80 hover:bg-indigo-900/50 border border-slate-700 text-left text-slate-200 transition" data-text="Warto w tym miejscu odwołać się do kontekstu historycznego, który unaocznia, że...">
+            „Warto odwołać się do kontekstu...”
+          </button>
+          <button class="copy-connector-btn p-2.5 rounded-lg bg-slate-800/80 hover:bg-indigo-900/50 border border-slate-700 text-left text-slate-200 transition" data-text="Powyższy przykład dobitnie ilustruje, że...">
+            „Powyższy przykład dobitnie ilustruje...”
+          </button>
+          <button class="copy-connector-btn p-2.5 rounded-lg bg-slate-800/80 hover:bg-indigo-900/50 border border-slate-700 text-left text-slate-200 transition" data-text="Reasumując powyższe rozważania, należy skonstatować, że...">
+            „Reasumując powyższe rozważania...”
+          </button>
+          <button class="copy-connector-btn p-2.5 rounded-lg bg-slate-800/80 hover:bg-indigo-900/50 border border-slate-700 text-left text-slate-200 transition" data-text="Konkludując, losy bohaterów literackich dowodzą uniwersalnej prawdy, że...">
+            „Konkludując, losy bohaterów dowodzą...”
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 4: BANK 5 LAT MATUR (2021-2025) -->
+    <!-- ========================================================================= -->
+    <section id="tab-5-years" class="tab-content hidden space-y-8">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold mb-2">
+          <span>PRAWDZIWE ARKUSZE CKE Z LAT 2021–2025</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Bank 5 Lat Matur & Wzorcowe Wypracowania na 35/35 PKT</h2>
+        <p class="text-sm text-slate-400">Przeanalizuj oryginalne tematy maturalne z ostatnich 5 lat i zobacz pełne, wzorcowe prace z podświetlonymi kryteriami oceniania CKE.</p>
+      </div>
+
+      <!-- Przełącznik lat -->
+      <div id="matura-years-tabs" class="flex flex-wrap gap-2"></div>
+
+      <!-- Dynamiczny obszar zawartości danego roku -->
+      <div id="matura-year-content"></div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 5: LEKTURY OBOWIĄZKOWE & TARCZA ANTYKARDYNALNA -->
+    <!-- ========================================================================= -->
+    <section id="tab-books" class="tab-content hidden space-y-8">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/20 text-rose-300 text-xs font-semibold mb-2">
+          <span>TARCZA ANTYKARDYNALNA • 0% RYZYKA ZEROWANIA PRACY</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Antykardynalna Baza Wiedzy z Lektur Obowiązkowych</h2>
+        <p class="text-sm text-slate-400">12 kluczowych lektur z uszczuplonej podstawy programowej. Dla każdego utworu podajemy problematykę, motywy oraz listę faktów fabularnych, których NIE WOLNO pomylić.</p>
+      </div>
+
+      <!-- Filtry i wyszukiwarka -->
+      <div class="flex flex-wrap items-center gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
+        <div class="flex-grow min-w-[200px]">
+          <input type="text" id="book-search" placeholder="Szukaj lektury, autora lub motywu (np. zbrodnia, bunt, miłość)..." class="w-full px-4 py-2 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500">
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-slate-400 font-medium">Epoka:</span>
+          <select id="epoch-filter" class="px-3 py-2 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-indigo-500">
+            <option value="all">Wszystkie epoki</option>
+            <option value="Starożytność">Starożytność (Antyk)</option>
+            <option value="Renesans">Renesans (XVI w.)</option>
+            <option value="Romantyzm">Romantyzm</option>
+            <option value="Pozytywizm">Pozytywizm</option>
+            <option value="Młoda Polska">Młoda Polska</option>
+            <option value="Dwudziestolecie">Dwudziestolecie międzywojenne</option>
+            <option value="Współczesność">Współczesność (XX wiek)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Siatka lektur -->
+      <div id="books-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 6: INTERPUNKCJA, SKŁADNIA & KROPKA VS PRZECINEK -->
+    <!-- ========================================================================= -->
+    <section id="tab-punctuation" class="tab-content hidden space-y-8">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold mb-2">
+          <span>POGROMCA ZDAŃ-TASIEMCÓW • 11/11 PKT ZA JĘZYK</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Warsztat Składni i Interpunkcji: Kiedy Kropka, a Kiedy Przecinek?</h2>
+        <p class="text-sm text-slate-400">Najczęstszą przyczyną utraty punktów za język są rozwlekłe zdania wielokrotnie złożone. Naucz się ciąć zdania i poznaj bezwzględne reguły przecinka.</p>
+      </div>
+
+      <!-- Żelazna Reguła Kropki -->
+      <div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-indigo-950/70 to-slate-900 border border-indigo-500/40">
+        <h3 class="text-xl font-bold text-white mb-3">🛑 Żelazna Zasada Kropki (Cięcie Tasiemców)</h3>
+        <p class="text-xs text-slate-300 leading-relaxed mb-4">
+          Bezpieczne zdanie maturalne liczy maksymalnie <strong>DWA orzeczenia</strong> (czasowniki). Jeśli masz ochotę dopisać trzecie <em>„który”</em>, <em>„ponieważ”</em> albo <em>„co spowodowało”</em> – <strong>NATYCHMIAST POSTAW KROPKĘ</strong> i zacznij nowe zdanie z konektorem logicznym!
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div class="p-4 rounded-xl bg-rose-950/40 border border-rose-800/50 text-rose-200">
+            <strong class="text-rose-400 block mb-2">❌ ZŁE: Zdanie-Tasiemiec (Utrata punktów za styl i spójność)</strong>
+            „Wokulski był postacią skomplikowaną, ponieważ kochał Izabelę, która nim gardziła, co doprowadziło go do załamania psychicznego, dlatego postanowił wyjechać z Warszawy i rzucić handel.”
+          </div>
+          <div class="p-4 rounded-xl bg-emerald-950/40 border border-emerald-800/50 text-emerald-200">
+            <strong class="text-emerald-400 block mb-2">✅ DOSKONAŁE: Rytm i Precyzja (Maksimum punktów za język)</strong>
+            „Wokulski był postacią niezwykle skomplikowaną. Jego tragizm wynikał z bezgranicznej miłości do Izabeli Łęckiej, która demonstracyjnie nim gardziła. W konsekwencji tego upokorzenia bohater doświadczył załamania psychicznego. Postanowił wówczas opuścić Warszawę.”
+          </div>
+        </div>
+      </div>
+
+      <!-- Wielka Mapa Przecinka -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+          <h4 class="text-sm font-bold text-emerald-400 uppercase tracking-wider">🟢 ZAWSZE STAWIAJ PRZECINEK:</h4>
+          
+          <div>
+            <strong class="text-white block">1. Przed spójnikami podrzędnymi:</strong>
+            <span class="text-slate-300 font-mono">że, żeby, aby, iż, bo, ponieważ, gdyż, albowiem, skoro, chociaż, choć, mimo że, jeśli, jeżeli, gdyby, dopóki</span>
+            <p class="text-slate-400 mt-1">Przykład: <em>Wiedział, <strong>że</strong> popełnił błąd.</em></p>
+          </div>
+
+          <div>
+            <strong class="text-white block">2. Przed zaimkami wprowadzającymi zdanie podrzędne:</strong>
+            <span class="text-slate-300 font-mono">który, jaka, czyje, kto, co, gdzie, dokąd, kiedy, jak</span>
+            <p class="text-slate-400 mt-1">Przykład: <em>Bohater, <strong>który</strong> zmagał się z sumieniem, przyznał się do winy.</em></p>
+          </div>
+
+          <div>
+            <strong class="text-white block">3. Przed spójnikami przeciwstawnymi:</strong>
+            <span class="text-slate-300 font-mono">ale, lecz, jednak, natomiast, zaś, a (w znaczeniu ale)</span>
+            <p class="text-slate-400 mt-1">Przykład: <em>Chciał pomóc ubogim, <strong>ale</strong> napotkał opór arystokracji.</em></p>
+          </div>
+
+          <div>
+            <strong class="text-white block">4. Przed spójnikami wynikowymi:</strong>
+            <span class="text-slate-300 font-mono">więc, zatem, toteż, dlatego</span>
+            <p class="text-slate-400 mt-1">Przykład: <em>Złamał prawo moralne, <strong>więc</strong> musiał ponieść karę.</em></p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+          <h4 class="text-sm font-bold text-rose-400 uppercase tracking-wider">🔴 KIEDY NIE STAWIAĆ PRZECINKA / PUŁAPKI:</h4>
+          
+          <div>
+            <strong class="text-white block">1. Przed pojedynczymi spójnikami łącznymi i rozłącznymi:</strong>
+            <span class="text-slate-300 font-mono">i, oraz, tudzież, albo, lub, czy, bądź, ani, ni</span>
+            <p class="text-slate-400 mt-1">Przykład: <em>Wokulski kochał Izabelę <strong>i</strong> wspierał ubogich.</em> (BEZ PRZECINKA!)</p>
+          </div>
+
+          <div>
+            <strong class="text-white block">2. Zbieg spójników (Złota Zasada CKE):</strong>
+            <span class="text-slate-300 font-mono">że gdy, że jeśli, a ponieważ, i chociaż</span>
+            <p class="text-slate-400 mt-1">
+              Przecinek stawiamy PRZED całym zestawieniem: <br>
+              <em>Wiedział, <strong>że jeśli</strong> ucieknie, straci godność.</em><br>
+              (NIGDY nie rozdzielaj przecinkiem „że, jeśli”!).
+            </p>
+          </div>
+
+          <div>
+            <strong class="text-white block">3. Obustronne wydzielanie wtrąceń i imiesłowów:</strong>
+            <span class="text-slate-300 font-mono">imiesłowy na -ąc, -wszy, -łszy</span>
+            <p class="text-slate-400 mt-1">
+              <em>Konrad<strong>,</strong> przekonany o swej potędze<strong>,</strong> wyzwał Boga.</em>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interaktywny Trener Interpunkcji -->
+      <div class="p-6 sm:p-8 rounded-3xl bg-slate-900 border border-slate-800">
+        <h3 class="text-lg font-bold text-white mb-2">✍️ Interaktywny Trener Interpunkcji Maturalnej</h3>
+        <p class="text-xs text-slate-400 mb-6">Wybierz odpowiedni znak w polach wyboru [1], [2] i kliknij „Sprawdź Interpunkcję”.</p>
+        <div id="punctuation-exercises"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 7: INTERAKTYWNY GENERATOR ROZPRAWKI -->
+    <!-- ========================================================================= -->
+    <section id="tab-wizard" class="tab-content hidden space-y-8">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-semibold mb-2">
+          <span>KREATOR ROZPRAWKI NA ZAMÓWIENIE</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Generator Szkieletu Wypracowania na 35/35 PKT</h2>
+        <p class="text-sm text-slate-400">Wybierz oficjalny temat z ostatnich 5 lat matur, dobierz lekturę obowiązkową i kontekst, a kreator wygeneruje kompletny szkielet rozprawki z gotowymi zdaniami!</p>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-3xl bg-slate-900 border border-slate-800">
+        <!-- Wybór Schematu Kompozycyjnego -->
+        <div class="mb-6 p-4 rounded-2xl bg-indigo-950/30 border border-indigo-500/30">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <label class="block text-xs font-bold text-indigo-300">Wybierz Schemat Kompozycyjny (Architektura Wypracowania CKE):</label>
+            <span id="wizard-scheme-badge" class="px-2 py-0.5 text-[10px] font-bold rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/40">Najbezpieczniejszy na 100% CKE</span>
+          </div>
+          <select id="wizard-scheme-select" class="w-full p-3 rounded-xl bg-slate-950 border border-indigo-500/40 text-slate-200 text-xs focus:outline-none focus:border-indigo-400">
+            <option value="klasyczny">1. Klasyczny Dedukcyjny (Teza we wstępie ➔ Rozwinięcie 1 ➔ Rozwinięcie 2 ➔ Konteksty ➔ Zakończenie)</option>
+            <option value="dialektyczny">2. Dialektyczny / Problemowy (Hipoteza ➔ Pro & Contra ➔ Kontekst syntezujący ➔ Teza w zakończeniu)</option>
+            <option value="porownawczy">3. Porównawczo-Synchroniczny (Zderzenie obu dzieł w każdym akapicie problemowym)</option>
+            <option value="egzystencjalny">4. Egzystencjalny / Sytuacja Graniczna (Dramat człowieka & Obrona człowieczeństwa)</option>
+            <option value="wlasny">5. Własny / Spersonalizowany Schemat Ucznia (Własne parametry)...</option>
+          </select>
+          <p id="wizard-scheme-desc" class="text-[11px] text-slate-400 mt-2 leading-relaxed">
+            Wstęp kończy się jednoznaczną tezą będącą bezpośrednią odpowiedzią na temat. W rozwinięciach udowadniasz słuszność tezy lekturą obowiązkową i drugim utworem, a konteksty funkcjonalnie dopełniają wywód.
+          </p>
+
+          <!-- Panel konfiguracji własnego schematu (pokazywany gdy wybrano 'wlasny') -->
+          <div id="wizard-custom-config" class="hidden mt-4 pt-4 border-t border-indigo-800/40 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div>
+              <label class="block text-slate-400 font-semibold mb-1">Liczba akapitów rozwinięcia:</label>
+              <select id="wizard-custom-paragraphs" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs focus:outline-none focus:border-indigo-400">
+                <option value="2">2 akapity (Standard CKE)</option>
+                <option value="3">3 akapity (Ambitny)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-slate-400 font-semibold mb-1">Pozycja i charakter tezy:</label>
+              <select id="wizard-custom-thesis" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs focus:outline-none focus:border-indigo-400">
+                <option value="intro_deductive">Jednoznaczna teza we wstępie</option>
+                <option value="intro_hypothesis">Hipoteza we wstępie, teza w zakończeniu</option>
+                <option value="compromise">Teza kompromisowa (dwie racje)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-slate-400 font-semibold mb-1">Układ analizy utworów:</label>
+              <select id="wizard-custom-style" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs focus:outline-none focus:border-indigo-400">
+                <option value="block">Blokowy (Utwór 1, potem Utwór 2)</option>
+                <option value="parallel">Problemowy (Zestawienie obu utworów w każdym akapicie)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs mb-6">
+          <div>
+            <label class="block text-slate-300 font-bold mb-2">1. Wybierz Temat Maturalny:</label>
+            <select id="wizard-topic-select" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500"></select>
+            <div id="wizard-custom-topic-wrapper" class="hidden mt-2 animate-fade-in">
+              <input type="text" id="wizard-custom-topic" placeholder="Wpisz pełne brzmienie własnego tematu (np. Samotność – wybór czy przekleństwo człowieka?)..." class="w-full p-3 rounded-xl bg-slate-950 border border-indigo-500/50 text-slate-200 text-xs focus:outline-none focus:border-indigo-400 placeholder:text-slate-600">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-bold mb-2">2. Wybierz Lekturę Obowiązkową (Argument 1):</label>
+            <select id="wizard-book1-select" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500"></select>
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-bold mb-2">3. Wybierz Drugi Utwór Literacki (Argument 2):</label>
+            <select id="wizard-book2-select" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500"></select>
+          </div>
+
+          <div>
+            <label class="block text-slate-300 font-bold mb-2">4. Wybierz Rodzaj Kontekstu:</label>
+            <select id="wizard-context-select" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500">
+              <option value="historyczny">Kontekst historyczny (wydarzenia dziejowe, represje, zabory)</option>
+              <option value="filozoficzny">Kontekst filozoficzny (egzystencjalizm, stoicyzm, nadczłowiek)</option>
+              <option value="biograficzny">Kontekst biograficzny (losy i przeżycia pisarza)</option>
+              <option value="literacki / topos">Kontekst literacki / motywiczny (np. mit o Prometeuszu)</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="wizard-generate-btn" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 transition">
+          ⚡ Wygeneruj Pełny Szkielet Rozprawki na 35 PKT
+        </button>
+
+        <div id="wizard-output" class="mt-8 hidden"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 8: INSPEKTOR POSZCZEGÓLNYCH CZĘŚCI ROZPRAWKI -->
+    <!-- ========================================================================= -->
+    <section id="tab-section-inspector" class="tab-content hidden space-y-8">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold mb-2">
+          <span>MIKRO-AUDYT CKE • SZLIFOWANIE POJEDYNCZYCH CZĘŚCI ROZPRAWKI</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">🔬 Inspektor Części Rozprawki: Przetestuj Swój Fragment</h2>
+        <p class="text-sm text-slate-400">Zanim napiszesz całe 400 słów, przetestuj każdą część z osobna według ścisłych kryteriów CKE! Sprawdź wstęp pod kątem tezy i banałów, rozwinięcie pod kątem analizy vs streszczenia, kontekst (czy jest funkcjonalny na 2 pkt!) oraz zakończenie.</p>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-3xl bg-slate-900 border border-slate-800 shadow-xl space-y-6">
+        <!-- Przełącznik badanej części -->
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-2">Wybierz Część Rozprawki do Przetestowania:</label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="inspector-part-tabs">
+            <button class="inspector-part-btn active p-3 rounded-xl bg-indigo-600 text-white font-bold text-xs border border-indigo-400 transition flex items-center justify-center gap-2" data-part="wstep">
+              <span>📝 Wstęp</span>
+            </button>
+            <button class="inspector-part-btn p-3 rounded-xl bg-slate-950 hover:bg-slate-800 text-slate-300 font-bold text-xs border border-slate-800 transition flex items-center justify-center gap-2" data-part="rozwiniecie">
+              <span>📖 Rozwinięcie</span>
+            </button>
+            <button class="inspector-part-btn p-3 rounded-xl bg-slate-950 hover:bg-slate-800 text-slate-300 font-bold text-xs border border-slate-800 transition flex items-center justify-center gap-2" data-part="kontekst">
+              <span>🌐 Kontekst (2 pkt)</span>
+            </button>
+            <button class="inspector-part-btn p-3 rounded-xl bg-slate-950 hover:bg-slate-800 text-slate-300 font-bold text-xs border border-slate-800 transition flex items-center justify-center gap-2" data-part="zakonczenie">
+              <span>🏁 Zakończenie</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Opis wymagań wybranej części -->
+        <div id="inspector-part-info" class="p-4 rounded-2xl bg-indigo-950/30 border border-indigo-500/30 text-xs text-slate-300 flex flex-wrap items-center justify-between gap-4">
+          <div class="space-y-1">
+            <strong id="inspector-info-title" class="text-indigo-300 font-bold text-sm block">📝 Wstęp (Wprowadzenie + Teza + Zapowiedź utworów)</strong>
+            <p id="inspector-info-desc" class="text-slate-300 text-xs">Wstęp musi zdefiniować problem z tematu, postawić jednoznaczną tezę (lub hipotezę) oraz zwięźle zapowiedzieć utwory, na których oprzesz argumentację.</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-slate-300 text-[11px] font-mono">
+              Zalecana długość: <strong id="inspector-info-words" class="text-indigo-400">55–80 słów</strong>
+            </span>
+          </div>
+        </div>
+
+        <!-- Pasek szybkich próbek -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+          <span class="text-xs font-bold text-slate-400">Szybkie Próbki do Testów:</span>
+          <div class="flex flex-wrap gap-2">
+            <button id="inspector-load-good" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-950/60 hover:bg-emerald-900/80 text-emerald-300 border border-emerald-800/50 transition flex items-center gap-1.5">
+              <span>💎 Wzorzec (Max Pkt CKE)</span>
+            </button>
+            <button id="inspector-load-bad" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-rose-950/60 hover:bg-rose-900/80 text-rose-300 border border-rose-800/50 transition flex items-center gap-1.5">
+              <span>⚠️ Typowy Błąd Maturzysty</span>
+            </button>
+            <button id="inspector-clear" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition">
+              Wyczyść
+            </button>
+          </div>
+        </div>
+
+        <!-- Pole tekstowe inspekcji -->
+        <div class="relative">
+          <textarea id="inspector-input" rows="8" placeholder="Wpisz lub wklej tutaj badany fragment..." class="w-full p-4 rounded-2xl bg-slate-950 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition leading-relaxed font-sans"></textarea>
+          
+          <!-- Licznik na żywo -->
+          <div class="flex flex-wrap items-center justify-between gap-3 mt-2 p-2.5 rounded-xl bg-slate-950/80 border border-slate-800/80 text-xs">
+            <div class="flex items-center gap-4">
+              <div class="flex items-center gap-1.5">
+                <span class="text-slate-400">Liczba słów:</span>
+                <strong id="inspector-word-count" class="text-indigo-400 font-mono text-sm">0 słów</strong>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-slate-400">Znaków:</span>
+                <strong id="inspector-char-count" class="text-slate-300 font-mono text-xs">0</strong>
+              </div>
+            </div>
+            <div id="inspector-length-badge" class="px-2.5 py-0.5 rounded text-[11px] font-bold bg-slate-800 text-slate-400">
+              Wpisz tekst do zbadania
+            </div>
+          </div>
+        </div>
+
+        <!-- Przycisk badania -->
+        <div class="flex justify-center">
+          <button id="inspector-run-btn" class="w-full sm:w-auto px-10 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-indigo-600 hover:from-emerald-500 hover:to-indigo-500 text-white font-black text-sm shadow-xl shadow-emerald-600/20 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+            <span>🔬 PRZETESTUJ TĘ CZĘŚĆ WEDŁUG KRYTERIÓW CKE</span>
+          </button>
+        </div>
+
+        <!-- Wyniki i Diagnoza Egzaminatora -->
+        <div id="inspector-results" class="hidden mt-6 pt-6 border-t border-slate-800 space-y-6 animate-fade-in"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 9: EGZAMINATOR CKE (OCENA CAŁEGO WYPRACOWANIA) -->
+    <!-- ========================================================================= -->
+    <section id="tab-evaluator" class="tab-content hidden space-y-8">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold mb-2">
+          <span>OFICJALNY ALGORYTM OCENIANIA CKE • POZIOM PODSTAWOWY (35 PKT)</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">⚖️ Egzaminator CKE: Automatyczna Ocena Twojego Wypracowania</h2>
+        <p class="text-sm text-slate-400">Wklej lub napisz swoją rozprawkę. Egzaminator przeanalizuje ją pod kątem: limitu słów (min. 300), lektur i kontekstów, struktury akapitów, konektorów, błędu kardynalnego, interpunkcji oraz wykryje zdania-tasiemce.</p>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-3xl bg-slate-900 border border-slate-800 shadow-xl">
+        <!-- Wybór tematu i przyciski szybkiego ładowania próbek -->
+        <div class="space-y-4 mb-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="md:col-span-2">
+              <label class="block text-xs font-bold text-slate-300 mb-1.5">Wybierz Temat Wypracowania:</label>
+              <select id="eval-topic-select" class="w-full p-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500">
+                <option value="bunt">Matura 2024: „Bunt i jego konsekwencje dla człowieka.”</option>
+                <option value="nadzieja">Matura 2025: „Źródło nadziei w czasach trudnych dla człowieka.”</option>
+                <option value="sprzecznosci">Matura 2023: „Człowiek – istota pełna sprzeczności.”</option>
+                <option value="tradycja">Matura 2022: „Czym dla człowieka może być tradycja?”</option>
+                <option value="ambicja">Matura 2021: „Ambicja – niszczy czy prowadzi do celu?”</option>
+                <option value="custom">Własny temat (wpisz poniżej)...</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-300 mb-1.5">Szybkie Próbki Testowe:</label>
+              <div class="flex flex-wrap gap-1.5">
+                <button id="eval-load-top" class="px-2.5 py-2 text-[11px] font-semibold rounded-lg bg-emerald-950/60 hover:bg-emerald-900/80 text-emerald-300 border border-emerald-800/50 transition" title="Wzorcowa praca na 35/35 pkt">
+                  Wzorzec 35 pkt
+                </button>
+                <button id="eval-load-mid" class="px-2.5 py-2 text-[11px] font-semibold rounded-lg bg-amber-950/60 hover:bg-amber-900/80 text-amber-300 border border-amber-800/50 transition" title="Praca ze zdaniami-tasiemcami i bez kontekstu">
+                  Praca Średnia (~20 pkt)
+                </button>
+                <button id="eval-load-cardinal" class="px-2.5 py-2 text-[11px] font-semibold rounded-lg bg-rose-950/60 hover:bg-rose-900/80 text-rose-300 border border-rose-800/50 transition" title="Praca z błędem kardynalnym - natychmiastowe 0 pkt">
+                  Błąd Kardynalny (0 pkt)
+                </button>
+                <button id="eval-clear" class="px-2.5 py-2 text-[11px] font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition">
+                  Wyczyść
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="eval-custom-topic-wrapper" class="hidden">
+            <input type="text" id="eval-custom-topic" placeholder="Wpisz pełny temat wypracowania..." class="w-full p-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500">
+          </div>
+        </div>
+
+        <!-- Edytor tekstu rozprawki -->
+        <div class="relative">
+          <textarea id="eval-essay-text" rows="14" placeholder="Wklej tutaj treść swojej rozprawki lub zacznij pisać... Pamiętaj o podziale na akapity (wstęp, min. 2 rozwinięcia, zakończenie) oraz zachowaniu min. 300 słów." class="w-full p-4 rounded-2xl bg-slate-950 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition leading-relaxed font-sans"></textarea>
+          
+          <!-- Pasek metryk na żywo pod edytorem -->
+          <div class="flex flex-wrap items-center justify-between gap-3 mt-3 p-3 rounded-xl bg-slate-950/80 border border-slate-800/80 text-xs">
+            <div class="flex flex-wrap items-center gap-4">
+              <div class="flex items-center gap-1.5">
+                <span class="text-slate-400">Wyrazy:</span>
+                <strong id="eval-metric-words" class="text-indigo-400 font-mono text-sm">0 słów</strong>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-slate-400">Akapity:</span>
+                <strong id="eval-metric-paragraphs" class="text-indigo-400 font-mono text-sm">0</strong>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-slate-400">Lektury:</span>
+                <span id="eval-metric-books" class="text-slate-300 font-medium">Brak wykrytych</span>
+              </div>
+            </div>
+            <div id="eval-metric-status" class="px-3 py-1 rounded-full text-[11px] font-bold bg-slate-800 text-slate-400">
+              Wpisz minimum 300 słów
+            </div>
+          </div>
+        </div>
+
+        <!-- Przycisk Oceny -->
+        <div class="mt-6 flex justify-center">
+          <button id="eval-run-btn" class="w-full sm:w-auto px-10 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 hover:from-indigo-500 hover:to-purple-500 text-white font-black text-sm shadow-xl shadow-indigo-600/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+            <span>⚖️ PRZEPROWADŹ PEŁNĄ OCENĘ CKE (35 PKT)</span>
+          </button>
+        </div>
+
+        <!-- WYNIKI I RAPORT OCENY -->
+        <div id="eval-results" class="mt-8 hidden space-y-6 animate-fade-in border-t border-slate-800 pt-8">
+          <!-- Główny Baner Wyniku -->
+          <div id="eval-score-banner" class="p-6 rounded-2xl bg-gradient-to-r from-indigo-950 via-slate-900 to-slate-900 border border-indigo-500/40 flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span id="eval-badge-status" class="px-3 py-1 text-xs font-bold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">OCENA POZYTYWNA</span>
+                <span id="eval-reading-badge" class="text-xs text-slate-400 font-mono"></span>
+              </div>
+              <h3 id="eval-score-title" class="text-3xl font-extrabold text-white">Szacunkowy Wynik CKE: <span id="eval-final-score" class="text-indigo-400">0/35 pkt</span></h3>
+              <p id="eval-score-subtitle" class="text-xs text-slate-300 mt-1">Ocena wyliczona w oparciu o 4 oficjalne kryteria arkusza maturalnego CKE.</p>
+            </div>
+            <div class="text-right">
+              <div class="text-4xl font-black text-white" id="eval-percentage">0%</div>
+              <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold">Procent z Wypracowania</span>
+            </div>
+          </div>
+
+          <!-- Alert Błędu Kardynalnego (jeśli wystąpi) -->
+          <div id="eval-cardinal-alert" class="hidden p-5 rounded-2xl bg-rose-950/80 border-2 border-rose-600 text-rose-100 text-xs space-y-2 animate-pulse shadow-xl shadow-rose-950/50">
+            <div class="flex items-center gap-2 text-rose-300 font-black text-sm">
+              <span>🚨 BŁĄD KARDYNALNY – ZEROWANIE CAŁEGO WYPRACOWANIA (0/35 PKT)!</span>
+            </div>
+            <p id="eval-cardinal-desc" class="leading-relaxed"></p>
+            <p class="text-[11px] text-rose-200/80">
+              Zgodnie z zasadami oceniania CKE: błąd kardynalny świadczy o całkowitej nieznajomości lektury obowiązkowej i skutkuje przyznaniem 0 punktów w kryterium KLiK oraz automatycznym wyzerowaniem całej pracy (0/35 pkt)!
+            </p>
+          </div>
+
+          <!-- Siatka 4 Kryteriów CKE -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+            <!-- Kryterium 1: SFWP -->
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-slate-400 font-semibold">1. Warunki Formalne (SFWP):</span>
+                  <strong id="eval-sfwp-score" class="text-amber-400 text-sm">0/1 pkt</strong>
+                </div>
+                <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden mb-2">
+                  <div id="eval-sfwp-bar" class="bg-amber-400 h-full rounded-full" style="width: 0%"></div>
+                </div>
+                <p id="eval-sfwp-note" class="text-[11px] text-slate-400 leading-relaxed"></p>
+              </div>
+            </div>
+
+            <!-- Kryterium 2: KLiK -->
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-slate-400 font-semibold">2. Kompetencje Literackie (KLiK):</span>
+                  <strong id="eval-klik-score" class="text-indigo-400 text-sm">0/16 pkt</strong>
+                </div>
+                <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden mb-2">
+                  <div id="eval-klik-bar" class="bg-indigo-500 h-full rounded-full" style="width: 0%"></div>
+                </div>
+                <p id="eval-klik-note" class="text-[11px] text-slate-400 leading-relaxed"></p>
+              </div>
+            </div>
+
+            <!-- Kryterium 3: Kompozycja -->
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-slate-400 font-semibold">3. Kompozycja & Spójność:</span>
+                  <strong id="eval-komp-score" class="text-purple-400 text-sm">0/7 pkt</strong>
+                </div>
+                <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden mb-2">
+                  <div id="eval-komp-bar" class="bg-purple-500 h-full rounded-full" style="width: 0%"></div>
+                </div>
+                <p id="eval-komp-note" class="text-[11px] text-slate-400 leading-relaxed"></p>
+              </div>
+            </div>
+
+            <!-- Kryterium 4: Język -->
+            <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-slate-400 font-semibold">4. Język, Styl & Interpunkcja:</span>
+                  <strong id="eval-lang-score" class="text-emerald-400 text-sm">0/11 pkt</strong>
+                </div>
+                <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden mb-2">
+                  <div id="eval-lang-bar" class="bg-emerald-500 h-full rounded-full" style="width: 0%"></div>
+                </div>
+                <p id="eval-lang-note" class="text-[11px] text-slate-400 leading-relaxed"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mocne Strony vs Do Poprawy -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-xs">
+            <!-- Mocne Strony -->
+            <div class="p-5 rounded-2xl bg-slate-950/80 border border-emerald-900/40">
+              <h4 class="text-sm font-bold text-emerald-400 mb-3 flex items-center gap-2">
+                <span>🟢 Co Zrobiłeś Świetnie (Mocne Strony):</span>
+              </h4>
+              <ul id="eval-strengths" class="space-y-2 text-slate-300"></ul>
+            </div>
+
+            <!-- Do Poprawy -->
+            <div class="p-5 rounded-2xl bg-slate-950/80 border border-amber-900/40">
+              <h4 class="text-sm font-bold text-amber-400 mb-3 flex items-center gap-2">
+                <span>⚠️ Co Wymaga Poprawy (Wskazówki Egzaminatora):</span>
+              </h4>
+              <ul id="eval-improvements" class="space-y-2 text-slate-300"></ul>
+            </div>
+          </div>
+
+          <!-- Wykryte Zdania-Tasiemce i Interpunkcja -->
+          <div id="eval-tasiemce-wrapper" class="p-5 rounded-2xl bg-slate-950/90 border border-slate-800">
+            <h4 class="text-sm font-bold text-indigo-400 mb-2 flex items-center gap-2">
+              <span>✒️ Analiza Zdań & Pułapki Interpunkcyjne:</span>
+            </h4>
+            <div id="eval-tasiemce-list" class="space-y-3 text-xs"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 9: QUIZ EGZAMINACYJNY OD ZERA DO 100% -->
+    <!-- ========================================================================= -->
+    <section id="tab-quiz" class="tab-content hidden space-y-8">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold mb-2">
+          <span>SPRAWDŹ SWOJĄ GOTOWOŚĆ BOJOWĄ</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Quiz Weryfikacyjny: Od Zera do 100% z CKE</h2>
+        <p class="text-sm text-slate-400">10 kluczowych pytań sprawdzających procedury CKE, fakty antykardynalne z lektur i interpunkcję. Sprawdź, czy jesteś gotowy na egzamin!</p>
+      </div>
+
+      <div id="quiz-container"></div>
+
+      <div class="flex justify-center">
+        <button id="quiz-submit-btn" class="px-8 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 transition">
+          Sprawdź Wyniki Quizu i Pokaż Wyjaśnienia CKE
+        </button>
+      </div>
+
+      <div id="quiz-result" class="hidden"></div>
+    </section>
+
+  
+<section id="tab-contexts" class="tab-content hidden space-y-6 max-w-7xl mx-auto pb-12">
+  <div class="p-6 rounded-2xl bg-gradient-to-br from-indigo-950/40 to-slate-900 border border-indigo-500/20 shadow-xl flex flex-col md:flex-row items-center gap-6">
+    <div class="flex-grow">
+      <h2 class="text-2xl font-black text-white mb-3">🧠 Uniwersalny Bank Kontekstów CKE</h2>
+      <p class="text-slate-300 text-sm leading-relaxed mb-4">
+        Zgodnie z wymaganiami egzaminacyjnymi, do pełnej punktacji w kryterium KLiK (Kompetencje Literackie i Kulturowe) potrzebujesz <strong>minimum dwóch kontekstów</strong> funkcjonujących w tekście. 
+        Poniżej znajdziesz 20 potężnych i uniwersalnych motywów, toposów oraz koncepcji filozoficznych, które pasują do ok. 90% tematów maturalnych. 
+      </p>
+      <div class="inline-flex gap-2 text-xs font-medium px-4 py-2 bg-emerald-950/30 border border-emerald-500/30 rounded-lg text-emerald-200">
+        💡 <strong>Wskazówka:</strong> Zamiast streszczać fabułę lektury, użyj jednego z tych pojęć na samym początku akapitu jako profesjonalnej tezy cząstkowej!
+      </div>
+    </div>
+    <div class="text-[60px] opacity-80 shrink-0">🏛️</div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Homo viator (człowiek w drodze)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Motyw / Topos</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Koncepcja traktująca ludzkie życie jako nieustanną wędrówkę, poszukiwanie sensu, celu lub własnej tożsamości. Podróż może być dosłowna (przemieszczanie się) lub metaforyczna (dojrzewanie wewnętrzne).
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Kordian” (J. Słowacki):</strong> Podróż bohatera po Europie to klasyczna wędrówka, która prowadzi do obalenia młodzieńczych iluzji i narodzin wojownika.<br><strong>„Mały Książę”:</strong> Podróż po planetach jako poszukiwanie prawdy o przyjaźni i miłości.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Theatrum mundi (teatr świata)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Koncepcja filozoficzno-literacka</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Przekonanie, że świat jest sceną, a ludzie jedynie aktorami i marionetkami, odgrywającymi narzucone im role. Naszym losem kieruje wyższa instancja (Bóg, fatum, historia, społeczeństwo).
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Lalka” (B. Prus):</strong> Zabawa Rzeckiego marionetkami to dosłowne odzwierciedlenie tego motywu – ludzie szamoczą się w sieci determinizmu społecznego.<br><strong>„Makbet”:</strong> Refleksja bohatera o życiu jako cieniu i marnym aktorze.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Prometeizm</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Postawa buntu</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Postawa heroiczna polegająca na buncie przeciwko Bogu, bogom lub losowi w imię bezinteresownej miłości do ludzkości. Wiąże się z ogromnym cierpieniem i samotnością jednostki wybitnej.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Dziady cz. III” (A. Mickiewicz):</strong> Konrad w Wielkiej Improwizacji buntuje się przeciwko Bogu, żądając „rządu dusz”, by uszczęśliwić cierpiący naród.<br><strong>„Ludzie bezdomni”:</strong> Tomasz Judym rezygnuje ze szczęścia dla dobra ubogich.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Motyw vanitas (marność)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Motyw biblijny / barokowy</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        „Marność nad marnościami i wszystko marność”. Motyw przypominający o nietrwałości, ułudzie ziemskich dóbr (urody, bogactwa, władzy) w obliczu nieuchronnej śmierci i upływu czasu.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>Księga Koheleta (Biblia):</strong> Uniwersalne źródło motywu.<br><strong>Poezja M. Sępa Szarzyńskiego (Barok):</strong> Ukazanie życia jako ciągłego bojowania, gdzie doczesne wartości szybko przemijają.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Psychomachia</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Motyw alegoryczny</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Wewnętrzna walka sił dobra (aniołów, sumienia) i zła (szatanów, żądz) o duszę człowieka. Ukazuje dwoistą naturę ludzką, rozdartą między moralnością a grzechem.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Dziady cz. III”:</strong> Walka złych i dobrych duchów nad śpiącym Konradem.<br><strong>„Makbet”:</strong> Proces ulegania złu i wewnętrzne rozdarcie tytułowego bohatera przed dokonaniem zbrodni.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Determinizm (biologiczny i społeczny)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Koncepcja filozoficzna</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Pogląd (szczególnie silny w pozytywizmie i naturalizmie), że człowiek nie jest w pełni wolny, a jego los jest uwarunkowany przez geny, środowisko, epokę lub instynkty.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Zbrodnia i kara”:</strong> Raskolnikow jest uwarunkowany biedą Petersburga.<br><strong>„Lalka”:</strong> Wokulski jako więzień swojej epoki (rozdarcie między romantyzmem a pozytywizmem), a uboższe warstwy jako ofiary środowiska.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Katastrofizm</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Nurt myślowy</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Schyłkowość, przeczucie zbliżającego się końca świata, upadku cywilizacji i dehumanizacji ludzkości na skutek mechanizacji, totalitaryzmów czy wojen.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>Poezja pokolenia Kolumbów (K.K. Baczyński):</strong> Zderzenie z apokalipsą spełnioną II wojny światowej.<br><strong>„Szewcy” (S.I. Witkiewicz):</strong> Upadek kultury i indywidualizmu na rzecz zmechanizowanego społeczeństwa.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Mesjanizm</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Koncepcja historiozoficzna</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Wiara, że dany naród lub jednostka (w polskiej literaturze: Polska) pełni misję zbawienia innych narodów poprzez własne, niewinne cierpienie, analogiczne do ofiary Chrystusa.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Dziady cz. III” (Widzenie Księdza Piotra):</strong> Polska ukazana jako „Chrystus narodów” – jej rozbiory to ukrzyżowanie, które przyniesie zmartwychwstanie i wolność Europie.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Non omnis moriar (Nie wszystek umrę)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Motyw autotematyczny</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Przekonanie, że prawdziwa nieśmiertelność artysty tkwi w jego dziełach. Fizyczne ciało umiera, ale sztuka trwa wiecznie, budując pomnik trwalszy ze spiżu.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>Pieśni Horacego („Wybudowałem pomnik”):</strong> Źródło motywu, twórca zapewnia sobie pamięć u potomnych.<br><strong>Wiersze J. Kochanowskiego:</strong> Potwierdzenie potęgi własnego talentu i poezji.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Ubi sunt? (Gdzie oni są?)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Motyw elegijny</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Pytanie retoryczne wyrażające tęsknotę, żal za tym, co minęło. Podkreśla kruchość ludzkiego życia, przemijanie dawnej chwały, urody czy potęgi.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>Poezja średniowieczna (np. Wielki Testament F. Villona):</strong> Refleksja nad przemijaniem dawnych dam i rycerzy.<br><strong>Literatura współczesna:</strong> Wspomnienie czasów, które bezpowrotnie minęły wskutek wojen.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Weltschmerz (Ból istnienia)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Postawa romantyczna</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Głęboki smutek, apatia i melancholia wynikająca z poczucia bezsensu istnienia oraz przepaści między ideałami a brutalną rzeczywistością.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Cierpienia młodego Wertera” (J.W. Goethe):</strong> Tytułowy bohater nie potrafi odnaleźć się w mieszczańskim świecie, co prowadzi go do samobójstwa.<br><strong>„Kordian”:</strong> W pierwszym akcie Kordian cierpi na „chorobę wieku”.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Arkadia (Mit sielankowy)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Topos</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Motyw wyidealizowanej krainy spokoju, obfitości i niewinności, gdzie człowiek żyje w harmonii z naturą, z dala od zgiełku cywilizacji.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Pan Tadeusz” (A. Mickiewicz):</strong> Soplicowo jako ucieczka przed obcą rusyfikacją – zamknięty, wyidealizowany świat polskiej tradycji i natury.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Danse macabre (Taniec śmierci)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Motyw alegoryczny</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Alegoryczny taniec ludzkości ze spersonifikowaną śmiercią. Wyraża absolutną równość wszystkich ludzi (królów, papieży, chłopów) w obliczu końca.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Rozmowa Mistrza Polikarpa ze Śmiercią” (Średniowiecze):</strong> Śmierć jest okrutna i bezlitosna dla wszystkich, niezależnie od statusu majątkowego.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Deus rydens (Bóg śmiejący się) / Deus faber</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Koncepcja teologiczno-filozoficzna</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Motyw przedstawiający Boga jako rzemieślnika (faber) lub jako stwórcę, który z dystansem (czasem ironią czy uśmiechem) patrzy na miotającego się na ziemi człowieka.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>Fraszki J. Kochanowskiego („O żywocie ludzkim”):</strong> Wieczna Myśl (Bóg) patrzy z rozbawieniem na ludzi, którzy walczą o błahostki, nie dostrzegając swojej marności.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Etos rycerski</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Wzorzec osobowy</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Zbiór niepisanych zasad moralnych: honor, odwaga, wierność władcy i Bogu, dbanie o sławę pośmiertną, obrona słabszych.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Pieśń o Rolandzie”:</strong> Roland woli zginąć w walce z przeważającymi siłami niż zhańbić siebie i wzywać pomocy, by zachować honor.<br><strong>„Potop” (H. Sienkiewicz):</strong> Przemiana Kmicica z warchoła w prawdziwego rycerza.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Etyka solidarności / Praca u podstaw</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Hasło / Koncepcja</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Pozytywistyczna (ale uniwersalna) koncepcja nakazująca jednostkom wspieranie najsłabszych i ubogich w celu podniesienia poziomu całego społeczeństwa.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Lalka” (B. Prus):</strong> Działania Wokulskiego na Powiślu, pomoc prostytutce Mariannie, braciom Wysockim.<br><strong>„Dżuma” (A. Camus):</strong> Solidarny zryw mieszkańców Oranu przeciwko zarazie.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Motyw labiryntu</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Topos</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Świat jako skomplikowana, nielogiczna struktura, w której człowiek jest zagubiony i nie potrafi znaleźć wyjścia (poznawczego, moralnego).
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Proces” (F. Kafka):</strong> Biurokratyczny, absurdalny świat, z którego Józef K. nie ma drogi ucieczki.<br><strong>„Sklepy cynamonowe” (B. Schulz):</strong> Miasto przypominające oniryczny labirynt, zacierający granicę jawy i snu.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Mistycyzm i Panteizm</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Nurt filozoficzny</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Wiara w możliwość bezpośredniego duchowego połączenia z Bogiem (mistycyzm) oraz przekonanie, że Bóg objawia się w całej naturze i wszechświecie (panteizm).
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Dziady cz. III”:</strong> Senne widzenia, bezpośredni kontakt z aniołami.<br><strong>Hymny J. Kasprowicza:</strong> Rozmowy z Bogiem poprzez potężne siły przyrody.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Motyw oniryczny (Sen)</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Motyw literacki</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        Wprowadzenie logiki snu do dzieła. Służy ukazaniu podświadomości bohatera, przeczuć, proroctw, a także jako narzędzie groteski.
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Dziady cz. III” (Sen Senatora):</strong> Ukazuje ukryte lęki Nowosilcowa przed utratą łask u Cara.<br><strong>„Proces” (F. Kafka):</strong> Cała powieść przypomina absurdalny, niepokojący koszmar.
+        </p>
+      </div>
+    </div>
+    
+    <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col h-full hover:border-indigo-500/50 transition duration-300">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="text-[15px] font-bold text-indigo-300">Macchiawelizm / Makiawelizm</h3>
+        <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">Postawa etyczna</span>
+      </div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed flex-grow">
+        „Cel uświęca środki” – doktryna polityczna usprawiedliwiająca zdradę, oszustwo i zbrodnię w imię wyższego dobra (np. ocalenia państwa).
+      </p>
+      <div class="pt-3 border-t border-slate-800/50">
+        <p class="text-[11px] text-slate-400">
+          <strong class="text-emerald-400 block mb-1">Przykłady użycia:</strong>
+          <strong>„Konrad Wallenrod” (A. Mickiewicz):</strong> Bohater posługuje się „bronią lisów” (zdradą i podstępem), by zniszczyć Zakon Krzyżacki i ocalić swój naród.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+</main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="mb-2">Platforma edukacyjna <strong>MaturaPolski100</strong> • Stworzona w 100% zgodnie z kryteriami Centralnej Komisji Egzaminacyjnej (CKE).</p>
+      <p>Materiały obejmują arkusze i wytyczne z lat 2021–2025/2026 oraz uszczuploną podstawę programową.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
